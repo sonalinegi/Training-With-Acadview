@@ -61,5 +61,8 @@ print('enter the elements in list')
 list = [int(x) for x in input().split()]
 print(list)
 no=int(input('enter no to be removed'))
+for i in list:
+    if i==no:
+        print('found')
 list.remove(no)
 print(list)
